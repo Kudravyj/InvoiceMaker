@@ -73,9 +73,12 @@ class InvoiceController extends Controller
     //searching controller
     public function search()
     {
+        //redirect persons without registration
+
         if(Auth::check() == false){
             return redirect('login');
         }
+        
         $search_text = $_GET['query'];
         $find_invoice = Invoice::where('id', 'LIKE', '%'.$search_text.'%')->get();
         return view('Invoice.search', compact('find_invoice'));
