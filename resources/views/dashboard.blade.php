@@ -46,14 +46,14 @@
                                                 </div>
                                             </div>  
                                             <div class="col-2 p-3">
-                                                <a href="/p/{{ $invoice->id }}/install">
-                                                    <img src="/svg/check.svg" class="greatimage" style="height: 40px" alt="img1">
-                                                </a>
-                                            </div>
-                                            <div class="col-2 p-3">
                                                 @method('delete')
                                                 <a href="/p/{{ $invoice->id }}/delete">
                                                     <img src="/svg/cancel.svg" class="greatimage" style="height: 40px" alt="img1">
+                                                </a>
+                                            </div>
+                                            <div class="col-2 p-3">
+                                                <a href="/p/{{ $invoice->id }}/install">
+                                                    <img src="/svg/check.svg" class="greatimage" style="height: 40px" alt="img1">
                                                 </a>
                                             </div>
                                         </div>
