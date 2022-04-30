@@ -39,7 +39,7 @@
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <a href="{{ route('login') }}">
                     <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                        <img src="\svg\plus.svg" alt="" style="height: 200px;">
+                        <img src="\svg\Plus.svg" alt="" style="height: 200px;">
                         <div style="color: white;">
                     </div>
                 </a>
@@ -47,6 +47,7 @@
                 <div style="color: white; padding: 30px;">
                     <h1>Hello that's my project</h1>
                     <p>Invoice maker for portfolio</p>
+                    <p>For using invoice maker/installer log in or register:)</p>
                 </div>
             </div>
         </div>

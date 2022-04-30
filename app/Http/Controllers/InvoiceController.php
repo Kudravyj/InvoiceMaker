@@ -11,7 +11,7 @@ use \App\Models\Product;
 use Illuminate\Support\Facades\DB;
 
 use Dompdf\Dompdf;
-use Barryvdh\DomPDF\Facade\PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 
 class InvoiceController extends Controller
@@ -64,7 +64,7 @@ class InvoiceController extends Controller
 
 
         //Creating Pdf file with domPDF library
-        $dompdf = PDF::loadView('document.pdf', compact('data', 'date', 'product'));
+        $dompdf = Pdf::loadView('document.pdf', compact('data', 'date', 'product'));
         $name = $id->id;
         return $dompdf->download("$date/$name.pdf");
 
